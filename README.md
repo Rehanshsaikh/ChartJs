@@ -1,6 +1,6 @@
-# Inventory Chart LWC Project
+# Chart.js with Salesforce LWC
 
-This project demonstrates how to integrate **Chart.js** with **Salesforce Lightning Web Components (LWC)** to visualize data fetched from Salesforce via **Apex**.
+This guide explains how to use **Chart.js** in **Salesforce Lightning Web Components (LWC)** to visualize data fetched from Salesforce via **Apex**.
 
 ## Setup Instructions
 
@@ -8,7 +8,7 @@ This project demonstrates how to integrate **Chart.js** with **Salesforce Lightn
 
 1. **Chart.js**:
    - Go to **Setup** > **Static Resources**.
-   - Click **New**, upload the `chart.js` file from your local folder, and name it `chartJs`.
+   - Click **New**, upload the `chart.js` file, and name it `chartJs`.
 
 2. **Chart.js DataLabels Plugin**:
    - Upload `chartjs-plugin-datalabels.js` as a static resource and name it `ChartDataLabels2`.
@@ -21,14 +21,14 @@ This project demonstrates how to integrate **Chart.js** with **Salesforce Lightn
 1. Open **Developer Console** or **VS Code** with Salesforce extensions.
 2. Deploy the `InventoryChartController.cls` to your Salesforce org.
    - This Apex class fetches data for the chart.
-   
+
 ### 3. Create and Deploy the LWC Component
 
 1. Create a new LWC component named `inventoryChartComponent`.
-2. Replace the generated component files with the following:
-   - `chartJs.html` (for the template)
-   - `chartJs.js` (for the logic)
-   - Optionally, `chartJs.css` (for styling the chart).
+2. Replace the generated component files with:
+   - `chartJs.html` (template)
+   - `chartJs.js` (logic)
+   - Optionally, `chartJs.css` (styling the chart).
 
 ### 4. Add the LWC Component to a Lightning Page
 
@@ -39,14 +39,14 @@ This project demonstrates how to integrate **Chart.js** with **Salesforce Lightn
 
 ### 5. Customize the Chart (Optional)
 
-- Modify the **Apex class** if you need to pull data from different Salesforce objects or fields.
-- You can customize the chart's appearance (e.g., labels, tooltips, axis configuration) by editing `chartJs.js`.
+- Modify the **Apex class** if you need to fetch different data.
+- You can customize the chart's appearance (e.g., labels, tooltips, axes) by editing `chartJs.js`.
 
 ## Troubleshooting
 
-- **Chart Not Displaying**: Verify that all static resources (Chart.js, DataLabels, ResizeObserver) are uploaded and named correctly.
-- **No Data Appearing**: Ensure that the Apex class is returning valid data from Salesforce.
+- **Chart Not Displaying**: Ensure all static resources (Chart.js, DataLabels, ResizeObserver) are uploaded and named correctly.
+- **No Data Appearing**: Make sure the Apex class is returning valid data.
 
 ---
 
-Once set up, the component will display dynamic charts using **Chart.js** based on data fetched from Salesforce objects.
+Once set up, the component will display charts using **Chart.js** based on data fetched from Salesforce objects.
