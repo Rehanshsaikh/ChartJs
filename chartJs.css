@@ -1,0 +1,9 @@
+.chart-container {
+    width: 100%; /* Full width */
+    height: 60vh; /* Set height to 60% of the viewport */
+}
+
+canvas {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
